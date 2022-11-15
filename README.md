@@ -1,1 +1,2 @@
 "# screenshots" 
+"# screenshot.deleteitems" 
