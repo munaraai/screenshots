@@ -31,10 +31,25 @@ public class Removestudents {
 		if(i%2==0) {
 		remove.get(i).click();
 		driver.findElement(By.xpath("//*[@id=\"remove\"]")).click();
+Date currentDate = new Date();
+		
+		String TheAcutalDate = currentDate.toString().replace(":", "-");
+
+		TakesScreenshot src = ((TakesScreenshot) driver) ; 
+		
+		File SrcFile = src.getScreenshotAs((OutputType.FILE));
+		
+		File Dest = new File("C://mypictures/"+TheAcutalDate+".png");
+		
+		FileUtils.copyFile (SrcFile,Dest);
+
 	}
 			 }
 			 
 		}
 	}
 		
+
+
+
 
